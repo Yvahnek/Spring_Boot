@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <html lang="pl">
+    <head>
+        <link th:href="@{/styles.css}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Zajęcia specjalnościowe</title>
+    </head>
+    <body>
+        <h1>─── Zajęcia specjalnościowe ───</h1>
+        <h2>Jan Kołakowski</h2>
+
+        <nav>
+            <a href="List_01">Lista Zadań nr 1</a>
+            <a style="color: #00FFFF;" href="List_02">Lista Zadań nr 2</a>
+        </nav>
+
+        <h3>27.10.2023r</h3>
+        <p><b>> ZADANIE 3:</b><br>Napisz stronę, która pozyska od użytkownika informacje wpisane w adresie URL wg schematu: adres:8080/tekst/liczba/tekst/liczba</p>
+        <ul>
+            <li><a href=http://localhost:8080/Odpowiedź_na_Wielkie_Pytanie_wynosi/42/Jan_Kołakowski/23>/Odpowiedź_na_Wielkie_Pytanie_wynosi/42/Jan_Kołakowski/23</a></li>
+        </ul>
+        <p><b>> ZADANIE 5:</b><br>Napisz stronę, która będzie realizowała funkcjonalność kalkulatora wykonującego działania: dodawania, odejmowania i iloczynu.<br>
+            Do strony przekazujemy w adresie: rodzaj działania oraz dwie liczby</p>
+        <ul>
+            <li><a href=http://localhost:8080/addition/2.5/3>/addition/2.5/3</a></li>
+            <li><a href=http://localhost:8080/subtraction/2.5/3>/subtraction/2.5/3</a></li>
+            <li><a href=http://localhost:8080/product/2.5/3>/product/2.5/3</a></li>
+        </ul>
+        <p><b>> ZADANIE 6:</b><br>Napisz stronę, która zwróci informację o: wersji przeglądarki/klienta HTTP, języku narodowym strony, adresie hosta.</p>
+        <ul>
+            <li><a href=http://localhost:8080/RequestHeader>/RequestHeader</a></li>
+        </ul>
+        <p><b>> ZADANIE 7:</b><br>Utwórz webowy kalkulator, zakładając że wysyłamy stronę z wynikiem jednego z działań: suma, różnica, iloczyn (@Controller).
+            Do strony dane przekazujemy w adresie: rodzaj działania oraz dwie liczby.</p>
+        <ul>
+            <li><a href=http://localhost:8080/calculator-MVC/addition/2.5/3>/calculator-MVC/addition/2.5/3</a></li>
+            <li><a href=http://localhost:8080/calculator-MVC/subtraction/2.5/3>/calculator-MVC/subtraction/2.5/3</a></li>
+            <li><a href=http://localhost:8080/calculator-MVC/product/2.5/3>/calculator-MVC/product/2.5/3</a></li>
+        </ul>
+        <p><b>> ZADANIE 8:</b><br>Napisz kod strony z użyciem Thymeleaf, która wyświetli dwa obiekty przesłane w Kontrolerze do Modelu</p>
+        <ul>
+            <li><a href=http://localhost:8080/object>/object</a></li>
+        </ul>
+    </body>
+</html>

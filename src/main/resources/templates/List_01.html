@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <html lang="pl">
+    <head>
+        <link th:href="@{/styles.css}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Zajęcia specjalnościowe</title>
+    </head>
+    <body>
+        <h1>─── Zajęcia specjalnościowe ───</h1>
+        <h2>Jan Kołakowski</h2>
+
+        <nav>
+            <a style="color: #00FFFF;" href="List_01">Lista Zadań nr 1</a>
+            <a href="List_02">Lista Zadań nr 2</a>
+        </nav>
+
+        <h3>13.10.2023r</h3>
+        <p><b>> ZADANIE 1</b><br>Opracuj aplikację webową zwracającą tekst, listę, liczbę.</p>
+        <ul>
+            <li><a href=http://localhost:8080/text>/text</a></li>
+            <li><a href=http://localhost:8080/list>/list</a></li>
+            <li><a href=http://localhost:8080/number>/number</a></li>
+        </ul>
+        <p><b>> ZADANIE 2</b><br>Napisz program który odczyta z adresu następujące parametry: imie, nazwisko, pesel, e-mail, telefon.<br>
+            Parametry e-mail oraz telefon są opcjonalne. W przypadku gdy jakiś parametr nie byłby przekazywany przez adres to informacja nie ma się wyświetlać.</p>
+        <ul>
+            <li><a href=http://localhost:8080/RequestParam?first_name=Jan&last_name=Kołakowski&personal_id_no=12345678910&email=jan.kolakowski@mail.pl&phone_number=6667652046>/RequestParam?first_name=Jan&last_name=Kołakowski&personal_id_no=12345678910&email=jan.kolakowski@mail.pl&phone_number=6667652046</a></li>
+            <li><a href=http://localhost:8080/RequestParam?first_name=Jan&last_name=Nowak&personal_id_no=1123581321>/RequestParam?first_name=Jan&last_name=Nowak&personal_id_no=1123581321</a></li>
+        </ul>
+    </body>
+</html>
