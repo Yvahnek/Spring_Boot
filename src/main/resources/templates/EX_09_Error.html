@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head lang="pl">
+        <meta charset="UTF-8">
+        <title>Error</title>
+    </head>
+    <body>
+        <p th:if="${personForm.first_name.length()}< 3"
+           th:text="'Liczba liter w imieniu: '+${personForm.first_name.length()}+'. Zbyt mała liczba znaków!'"></p>
+
+        <p th:if="${personForm.last_name.length()}< 1"
+           th:text="'Ilość liter w nazwisku: '+${personForm.last_name.length()}+'. Zbyt mała liczba znaków!'"></p>
+
+        <p th:if="${personForm.email.length()}< 3"
+           th:text="'Ilość liter w mailu: '+${personForm.email.length()}+'. Zbyt mała liczba znaków!'"></p>
+
+        <form th:action="@{/add}" method="post">
+            <p><input type="text" th:field="${personForm.first_name}" /></p>
+            <p><input type="text" th:field="${personForm.last_name}" /></p>
+            <p><input type="text" th:field="${personForm.phone_number}" /></p>
+            <p><input type="text" th:field="${personForm.email}" /></p>
+            <p><input type="submit" value="Add" /></p>
+        </form>
+    </body>
+</html>

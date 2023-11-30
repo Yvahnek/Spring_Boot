@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head lang="pl">
+        <meta charset="UTF-8"/>
+        <title>Formularz</title>
+    </head>
+    <body>
+        <form th:action="@{/add}" method="post">
+            <p><input type="text" th:field="${person_3.first_name}" /></p>
+            <p><input type="text" th:field="${person_3.last_name}" /></p>
+            <p><input type="text" th:field="${person_3.phone_number}" /></p>
+            <p><input type="text" th:field="${person_3.email}" /></p>
+            <p><input type="submit" value="Add" /></p>
+        </form>
+    </body>
+</html>

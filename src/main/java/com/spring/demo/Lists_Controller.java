@@ -13,4 +13,6 @@ public class Lists_Controller {
     public String list_02() {
         return "List_02";
     }
+    @RequestMapping("/List_03")
+    public String list_03() { return "List_03"; }
 }
